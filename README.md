@@ -4,11 +4,11 @@
 
 ----------------------------------------------------------
 
-### *How to use the Python script : selenium.py*
+### *How to use the Python script : compare_title.py*
 
 Install Selenium (pip install selenium)
 
-Open selenium.py --> edit url1, url2 and url3 with your urls
+In the selenium folder open compare_title.py --> edit url1, url2 and url3 with your urls
 
 Run the script, it will show you the 3 url's title and finaly the longest of them
 
@@ -16,7 +16,7 @@ Run the script, it will show you the 3 url's title and finaly the longest of the
 
 ### *Selenium project*
 
-This repo contain the selenium project .side with the 3 IDE test/scenario :
+This repo contain the selenium project .side (selenium/TP_Industrialisation.side) with the 3 following IDE test/scenario :
 
 - test_documentation
 - test_inscription

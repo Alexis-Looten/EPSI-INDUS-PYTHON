@@ -1,5 +1,3 @@
-import time
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -25,16 +23,16 @@ def create_chrome_driver():
     )
 
 
-if __name__ == "__main__":
-    driver = create_chrome_driver()
+
+driver = create_chrome_driver()
     
-    url_list = [url1, url2, url3]
-    title_list = []
+url_list = [url1, url2, url3]
+title_list = []
     
-    for url in url_list:
-        title = get_title(driver, url, url_list.index(url)+1)
-        title_list.append(title)
+for url in url_list:
+    title = get_title(driver, url, url_list.index(url)+1)
+    title_list.append(title)
     
-    driver.quit()
+driver.quit()
     
-    print(f"Voici le titre le plus long : '{max(title_list, key=len)}'")
+print(f"Voici le titre le plus long : '{max(title_list, key=len)}'")
