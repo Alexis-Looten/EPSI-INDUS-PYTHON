@@ -28,7 +28,7 @@ jobs:
 
     - name: Analysing the code with pylint
       run: |
-        python -m pylint --fail-under=0 $(git ls-files '*.py')
+        python -m pylint --exit-zero $(git ls-files '*.py')
       
     - name: Analysing the tests covering
       run: |

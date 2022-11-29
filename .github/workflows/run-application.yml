@@ -20,4 +20,4 @@ jobs:
 
       - name: Run the application
         run: |
-          python -m "../application/main.py"
+          python3 "application/main.py"
