@@ -1,0 +1,23 @@
+name: Running CI
+
+on:
+  workflow_dispatch:
+  push: 
+    branches: 
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout my project
+        uses: actions/checkout@v3
+        
+      - name: Install Python 3.10 
+        uses: actions/setup-python@v4
+        with: 
+          python-version: "3.10"
+
+      - name: Run the application
+        run: |
+          python -m "application/main.py"

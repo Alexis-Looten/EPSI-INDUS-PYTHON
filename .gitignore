@@ -1,1 +1,6 @@
-/venv
+*venv*
+*pycache*
+*pytest_cache*
+*htmlcov*
+*prof*
+*.coverage*
