@@ -28,7 +28,7 @@ jobs:
 
     - name: Analysing the code with pylint
       run: |
-        python -m pylint --exit-zero --color=yes $(git ls-files '*.py')
+        python -m pylint $(git ls-files '*.py') --exit-zero --output-format=colorized
       
     - name: Analysing the tests covering
       run: |
