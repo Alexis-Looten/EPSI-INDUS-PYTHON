@@ -22,8 +22,9 @@ This repo contain the selenium project .side with the 3 IDE test/scenario :
 - test_inscription
 - test_titre_contenu
 
+----------------------------------------------------------
 
-#### Préparer son environnement
+### Préparer son environnement
 
 Installer le paquet virtualenv
 
